@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="style.js" defer></script>
+    <title>WEATHER</title>
 </head>
 <body>
 
-    <form action="" method="post" id="myForm">
-        <input type="text" id="myInput">
-        <button type="button" id="myBtn">Montre moi !</button>
-    </form>
 
-    <p id="meteo"></p>
+    <header>
+        <H1 class="ville"></H1>
+        <H1 class="temp "></H1>
+        <i class="wi"></i>
+        <p class="description"></p>
 
-    <script src="style.js"></script>
+        <p class="choix">Quelle est le temps dans ta ville ?</p>
+
+        <form class="form container">
+            <input class="input" type="text" placeholder = "Entre ta ville" maxlength="30">
+            <button class="button" type="submit">Montrez moi !</button>
+        </form>
+    </header>
+
+
 
 </body>
 </html>
